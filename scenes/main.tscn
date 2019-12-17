@@ -1,0 +1,179 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/main.gd" type="Script" id=1]
+[ext_resource path="res://assets/102.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/phone.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/DnD_node_container.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 516.176, 305.996 )
+scale = Vector2( 0.197686, 0.197686 )
+texture = ExtResource( 2 )
+
+[node name="phone_tree_container" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="phone6" parent="phone_tree_container" instance=ExtResource( 3 )]
+editor/display_folded = true
+position = Vector2( 504.112, 417.526 )
+scale = Vector2( 0.792682, 0.792682 )
+z_as_relative = true
+piece_nb = "5"
+
+[node name="DnD_node_container5" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( -96.7379, 10.5127 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "2"
+
+[node name="DnD_node_container2" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 2.95477, -53.3118 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "4"
+
+[node name="DnD_node_container6" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 105.813, -107.642 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "2"
+
+[node name="DnD_node_container" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 291.367, -45.9995 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "1"
+
+[node name="DnD_node_container3" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 229.149, -9.31906 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "1"
+
+[node name="DnD_node_container4" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 167.024, 28.7544 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "1"
+base_node = "res://scenes/phone.tscn"
+
+[node name="DnD_node_container7" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 164.387, -50.8942 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "3"
+
+[node name="DnD_node_container8" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( -1.94437, -164.736 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container9" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( -58.5242, -147.012 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container10" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 84.6296, 14.5476 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container11" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 40.3202, 48.6318 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container12" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( 81.2212, 73.1725 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container13" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( -188.726, -47.4857 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container14" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( -159.414, -49.5308 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="DnD_node_container15" parent="phone_tree_container/phone6" instance=ExtResource( 4 )]
+position = Vector2( -197.588, -14.0832 )
+scale = Vector2( 0.986006, 0.986006 )
+z_as_relative = false
+group_node_expected = "6"
+
+[node name="phone4" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 749.839, 87.6328 )
+z_as_relative = true
+piece_nb = "3"
+
+[node name="phone3" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 573.137, 100.591 )
+z_as_relative = true
+piece_nb = "2"
+
+[node name="phone2" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 406.251, 109.883 )
+z_as_relative = true
+
+[node name="phone" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 213.806, 124.67 )
+z_as_relative = true
+
+[node name="phone14" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 125.163, 389.489 )
+z_as_relative = true
+piece_nb = "4"
+
+[node name="phone5" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 924.78, 109.071 )
+z_as_relative = true
+piece_nb = "2"
+
+[node name="phone7" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 879.353, 198.696 )
+z_as_relative = true
+piece_nb = "6"
+
+[node name="phone8" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 886.72, 314.103 )
+z_as_relative = true
+piece_nb = "6"
+
+[node name="phone9" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 929.971, 261.316 )
+z_as_relative = true
+piece_nb = "6"
+
+[node name="phone10" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 959.756, 272.412 )
+z_as_relative = true
+piece_nb = "6"
+
+[node name="phone11" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 979.405, 241.968 )
+z_as_relative = true
+piece_nb = "6"
+
+[node name="phone12" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 938.301, 276.133 )
+z_as_relative = true
+piece_nb = "6"
+
+[node name="phone13" parent="phone_tree_container" instance=ExtResource( 3 )]
+position = Vector2( 867.648, 253.546 )
+z_as_relative = true
+piece_nb = "6"
+
